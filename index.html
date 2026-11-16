@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Vipul Rajpurohit | Cybersecurity &amp; Full-Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Vipul Rajpurohit Chensinh - BCA Cybersecurity Student (2024-2027) at GSFC University. Application Security, Penetration Testing &amp; Full-Stack Engineering.">
+  <meta name="author" content="Vipul Rajpurohit Chensinh">
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Favicon (Cybersecurity Shield Icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z'/></svg>">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vipul Rajpurohit Chensinh | Cybersecurity &amp; Full-Stack Developer">
+  <meta property="og:description" content="BCA Cybersecurity Student at GSFC University, Greater Vadodara / Khergam, Gujarat.">
+
+  <!-- Google Fonts: Inter & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate On Scroll) CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Main Stylesheet (Modern Blue & White Light Theme) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Fixed Navigation Bar (Clean, Blue & White Light Theme)
+       ========================================================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Name -->
+      <a href="#hero" class="brand-link" aria-label="Vipul Rajpurohit Home">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <span>Vipul <span class="brand-accent">Rajpurohit</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu (No Admin Button) -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#about" class="nav-link">About &amp; Background</a></li>
+      <li><a href="#skills" class="nav-link">Skills &amp; Tooling</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#projects" class="nav-link">Projects Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- =========================================================================
+       Floating Admin Control Bar (Revealed ONLY after Ctrl+Shift+A PIN Auth)
+       ========================================================================= -->
+  <div class="floating-admin-bar" id="floating-admin-bar">
+    <div class="admin-dock-badge">
+      <span class="pulse-status"></span>
+      <span>ADMIN MODE ACTIVE</span>
+    </div>
+    <button class="admin-dock-btn" id="dock-btn-about">
+      <i class="fa-solid fa-user-pen"></i> <span>Edit About &amp; Photo</span>
+    </button>
+    <button class="admin-dock-btn" id="dock-btn-skills">
+      <i class="fa-solid fa-sliders"></i> <span>Manage Skills</span>
+    </button>
+    <button class="admin-dock-btn" id="dock-btn-contact">
+      <i class="fa-solid fa-address-book"></i> <span>Edit Contact &amp; Socials</span>
+    </button>
+    <button class="admin-dock-btn" id="dock-btn-add-project">
+      <i class="fa-solid fa-plus"></i> <span>Add Project</span>
+    </button>
+    <button class="admin-dock-btn" id="dock-btn-reset-all">
+      <i class="fa-solid fa-rotate-left"></i> <span>Reset Defaults</span>
+    </button>
+    <!-- One-Click Exit Button To Return to Normal Visitor View -->
+    <button class="admin-dock-btn exit-btn" id="dock-btn-exit" title="Return to normal visitor view">
+      <i class="fa-solid fa-lock"></i> <span>Exit Admin Mode</span>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       2. Hero Section (Aesthetic Vector Backdrop - NO Face Image)
+       ========================================================================= -->
+  <header class="hero-section" id="hero">
+    <!-- Ambient Blue Backdrop Effects -->
+    <div class="hero-glow-orb-1"></div>
+    <div class="hero-vector-backdrop"></div>
+
+    <div class="container hero-content">
+      
+      <!-- Status Badge -->
+      <div class="hero-badge-pill">
+        <span class="pulse-status"></span>
+        <span>GSFC UNIVERSITY // CYBERSECURITY &amp; APPLICATION DEFENSE</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero-title">
+        Vipul Rajpurohit <br>
+        <span class="gradient-text">Chensinh</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-subtitle">
+        BCA (2024–2027) Student <span style="color: var(--blue-primary); font-weight: 700;">|</span> Cybersecurity Enthusiast &amp; Full-Stack Web Developer
+      </p>
+
+      <!-- Description -->
+      <p class="hero-description">
+        Undergraduate student at <strong>GSFC University</strong> based in Greater Vadodara / Khergam, Gujarat. Dedicated to defensive application architecture, proactive vulnerability mitigation (OWASP Top 10), and building secure, attack-resistant digital platforms.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-code"></i>
+          <span>Explore Projects</span>
+        </a>
+        <a href="https://www.linkedin.com/in/vipul-rajpurohit-896824343" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="hero-btn-linkedin">
+          <i class="fa-brands fa-linkedin-in" style="color: var(--blue-primary);"></i>
+          <span>Connect on LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Architecture Card Showcase -->
+      <div class="hero-illustration-card" data-aos="zoom-in" data-aos-delay="150">
+        <div class="code-window-header">
+          <div class="window-dots">
+            <span class="dot dot-1"></span>
+            <span class="dot dot-2"></span>
+            <span class="dot dot-3"></span>
+          </div>
+          <span class="window-title">DEFENSE-BY-DESIGN // CORE ARCHITECTURE</span>
+          <span class="badge-tag" style="color: var(--blue-primary); background: var(--blue-soft); border-color: var(--blue-subtle);">
+            <i class="fa-solid fa-lock"></i> SECURE DEV
+          </span>
+        </div>
+
+        <div class="hero-highlights-row">
+          <div class="highlight-box">
+            <i class="fa-solid fa-shield-virus"></i>
+            <h4 class="highlight-box-title">OWASP Top 10 Defense</h4>
+            <p class="highlight-box-desc">Zero-trust input sanitization, CSRF defenses, and SQL injection prevention.</p>
+          </div>
+
+          <div class="highlight-box">
+            <i class="fa-solid fa-network-wired"></i>
+            <h4 class="highlight-box-title">Network Auditing</h4>
+            <p class="highlight-box-desc">Traffic inspection, Wireshark packet analysis, and secure socket protocols.</p>
+          </div>
+
+          <div class="highlight-box">
+            <i class="fa-solid fa-cubes"></i>
+            <h4 class="highlight-box-title">Full-Stack Execution</h4>
+            <p class="highlight-box-desc">Modular REST APIs with Node.js, Express, MongoDB, MySQL, and clean frontends.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. 3-Step Connected Contact Flow Bar (Dynamically Updated from CMS)
+       ========================================================================= -->
+  <section class="contact-flow-section">
+    <div class="container">
+      <div class="flow-grid">
+        
+        <!-- Step 1: Phone -->
+        <a href="tel:+919558648873" class="flow-item" id="flow-link-phone" data-aos="fade-up" data-aos-delay="50">
+          <div class="flow-step-circle">1</div>
+          <div class="flow-meta">
+            <span class="flow-label">Voice / WhatsApp Line</span>
+            <span class="flow-value" id="flow-val-phone">+91 9558648873</span>
+          </div>
+        </a>
+
+        <!-- Step 2: Email -->
+        <a href="mailto:vipulrajpurohit9005@gmail.com" class="flow-item" id="flow-link-email" data-aos="fade-up" data-aos-delay="150">
+          <div class="flow-step-circle">2</div>
+          <div class="flow-meta">
+            <span class="flow-label">Electronic Mail Inquiries</span>
+            <span class="flow-value" id="flow-val-email">vipulrajpurohit9005@gmail.com</span>
+          </div>
+        </a>
+
+        <!-- Step 3: LinkedIn -->
+        <a href="https://www.linkedin.com/in/vipul-rajpurohit-896824343" target="_blank" rel="noopener noreferrer" class="flow-item" id="flow-link-linkedin" data-aos="fade-up" data-aos-delay="250">
+          <div class="flow-step-circle">3</div>
+          <div class="flow-meta">
+            <span class="flow-label">Verified Professional Network</span>
+            <span class="flow-value">linkedin.com/in/vipul-rajpurohit</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. About & Background Section (WITH EDITABLE PROFILE PHOTO & BIO)
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">ABOUT // ACADEMICS &amp; OBJECTIVES</span>
+        <h2 class="section-title">Defensive Engineering &amp; Academic Focus</h2>
+        <p class="section-subtitle">
+          Combining rigorous computer application fundamentals with practical application security and full-stack development.
+        </p>
+        <!-- Inline Admin Edit Trigger -->
+        <button class="section-admin-btn" id="btn-section-edit-about">
+          <i class="fa-solid fa-pen-to-square"></i> <span>Edit About &amp; Change Photo</span>
+        </button>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Left: Official Profile Photo Card (Live Updated from CMS!) -->
+        <div class="profile-card-container" data-aos="fade-right">
+          <div class="profile-img-frame">
+            <img 
+              src="assets/profile.jpg" 
+              alt="Vipul Rajpurohit Chensinh" 
+              class="profile-photo"
+              id="about-profile-photo"
+              loading="lazy"
+            >
+          </div>
+          <div class="profile-card-footer">
+            <h3 class="profile-name-tag" id="about-display-name">Vipul Rajpurohit Chensinh</h3>
+            <p class="profile-sub-tag" id="about-display-subtag">BCA (2024–2027) // GSFC UNIVERSITY</p>
+          </div>
+        </div>
+
+        <!-- Right: Bio & Narrative (Live Updated from CMS!) -->
+        <div class="about-text-content" data-aos="fade-left">
+          <p class="about-lead" id="about-display-lead">
+            I am a passionate <strong>BCA (Bachelor of Computer Applications) student (2024–2027)</strong> at <strong>GSFC University</strong>, residing in Khergam, near Valsad / Greater Vadodara, Gujarat.
+          </p>
+
+          <p class="about-body" id="about-display-body">
+            My academic journey is dedicated to mastering both sides of the digital landscape: building resilient full-stack web applications and fortifying them against sophisticated cyber threats. By implementing the <strong>OWASP Top 10 proactive security controls</strong>, I ensure web systems eliminate vulnerability vectors such as injection flaws, cross-site scripting (XSS), and broken access controls.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <h4>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Cybersecurity &amp; Pen-Testing</span>
+              </h4>
+              <p>
+                Hands-on penetration testing basics, vulnerability assessment, traffic auditing in Wireshark, and defensive scripting.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <h4>
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Full-Stack Web Engineering</span>
+              </h4>
+              <p>
+                Architecting clean RESTful services, database schemas in MongoDB &amp; MySQL, and responsive user interfaces.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education Institution Badge -->
+          <div class="education-pill-card">
+            <div class="edu-icon-wrap">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-text-wrap">
+              <h5 id="about-display-edu-title">GSFC University — Bachelor of Computer Applications (BCA)</h5>
+              <p id="about-display-edu-desc">Vadodara, Gujarat (2024 – 2027) • Rigorous curriculum in Network Security, Operating Systems, Database Management &amp; Software Design.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Skills & Tooling Matrix (DYNAMICALLY EDITABLE VIA ADMIN CMS!)
+       ========================================================================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">CAPABILITIES // TECHNICAL STACK</span>
+        <h2 class="section-title">Technical Skills &amp; Security Tooling</h2>
+        <p class="section-subtitle">
+          Core programming foundations, modern web engineering frameworks, and hands-on cybersecurity tools.
+        </p>
+        <!-- Inline Admin Edit Trigger -->
+        <button class="section-admin-btn" id="btn-section-edit-skills">
+          <i class="fa-solid fa-sliders"></i> <span>Manage Skills &amp; Tools</span>
+        </button>
+      </div>
+
+      <!-- Rendered dynamically from State.skills by js/app.js -->
+      <div class="skills-grid" id="skills-container">
+        <!-- Rendered by js/app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Certifications & Credentials
+       ========================================================================= -->
+  <section class="section" id="certifications">
+    <div class="container">
+      
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">CREDENTIALS // INDUSTRY ACCREDITATION</span>
+        <h2 class="section-title">Verified Certifications</h2>
+        <p class="section-subtitle">
+          Validated certifications across cloud foundations, Python engineering, and core cybersecurity disciplines.
+        </p>
+      </div>
+
+      <div class="certifications-grid">
+        
+        <!-- Cert 1: AWS Academy -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-issuer">
+            <i class="fa-brands fa-aws"></i>
+            <span>AMAZON WEB SERVICES (AWS)</span>
+          </div>
+          <h3 class="cert-title">AWS Academy Cloud Foundations</h3>
+          <p class="cert-body">
+            Validated knowledge of AWS cloud architecture, Identity and Access Management (IAM), shared security responsibility models, VPC networking, and cloud compliance standards.
+          </p>
+          <div class="cert-footer">
+            <span>Issuer: AWS Academy</span>
+            <span class="cert-status-badge">
+              <i class="fa-solid fa-circle-check"></i> VERIFIED
+            </span>
+          </div>
+        </div>
+
+        <!-- Cert 2: Microsoft -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-issuer">
+            <i class="fa-brands fa-microsoft"></i>
+            <span>MICROSOFT</span>
+          </div>
+          <h3 class="cert-title">Microsoft Essentials of Python</h3>
+          <p class="cert-body">
+            Demonstrated mastery in Python data structures, algorithms, conditional execution flows, modular libraries, and file operations for software and scripting development.
+          </p>
+          <div class="cert-footer">
+            <span>Issuer: Microsoft</span>
+            <span class="cert-status-badge">
+              <i class="fa-solid fa-circle-check"></i> VERIFIED
+            </span>
+          </div>
+        </div>
+
+        <!-- Cert 3: LearnTube -->
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-issuer">
+            <i class="fa-solid fa-shield"></i>
+            <span>LEARNTUBE ACADEMY</span>
+          </div>
+          <h3 class="cert-title">Cyber Security Certification</h3>
+          <p class="cert-body">
+            Comprehensive training in cybersecurity foundations, reconnaissance techniques, defending against social engineering vectors, port auditing, and infrastructure hardening.
+          </p>
+          <div class="cert-footer">
+            <span>Issuer: LearnTube</span>
+            <span class="cert-status-badge">
+              <i class="fa-solid fa-circle-check"></i> VERIFIED
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Interactive Projects Section (Dynamic LocalStorage CRUD & Hidden Admin)
+       ========================================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">PROJECTS // PRACTICAL SHOWCASE</span>
+        <h2 class="section-title">Featured Web &amp; Security Projects</h2>
+        <p class="section-subtitle">
+          Real-world applications, browser security tooling, and commercial platforms built with security in mind.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills (Including Upcoming Projects!) -->
+      <div class="projects-filter-bar" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="Cybersecurity">Cybersecurity</button>
+        <button class="filter-btn" data-filter="Full-Stack">Full-Stack</button>
+        <button class="filter-btn" data-filter="upcoming">Upcoming Projects</button>
+      </div>
+
+      <!-- Dynamic Projects Grid (Rendered by js/app.js) -->
+      <div class="projects-grid" id="projects-container">
+        <!-- Rendered with safe DOM construction -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Contact & Social Channels Section (DYNAMIC CMS POWERED)
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">CONNECT // REACH OUT</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          Interested in discussing an internship, cybersecurity collaboration, or software development opportunity?
+        </p>
+        <!-- Inline Admin Edit Trigger -->
+        <button class="section-admin-btn" id="btn-section-edit-contact">
+          <i class="fa-solid fa-pen-to-square"></i> <span>Edit Contact &amp; Manage Social Links</span>
+        </button>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Official Profile & Contact Info Card (Dynamic CMS!) -->
+        <div class="contact-profile-card" data-aos="fade-right">
+          
+          <!-- Avatar Row with Photo -->
+          <div class="contact-avatar-row">
+            <img 
+              src="assets/profile.jpg" 
+              alt="Vipul Rajpurohit" 
+              class="contact-avatar-thumb"
+              id="contact-profile-photo"
+            >
+            <div class="contact-avatar-info">
+              <h4 id="contact-display-name">Vipul Rajpurohit Chensinh</h4>
+              <p id="contact-display-sub">BCA Cybersecurity Student • GSFC University</p>
+            </div>
+          </div>
+
+          <!-- Channel Links (Phone, Email, Location) -->
+          <div class="contact-channels-list">
+            
+            <a href="tel:+919558648873" class="channel-item" id="contact-link-phone">
+              <div class="channel-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="channel-text">
+                <span class="label">Primary Voice / WhatsApp</span>
+                <span class="val" id="contact-val-phone">+91 9558648873</span>
+              </div>
+            </a>
+
+            <a href="mailto:vipulrajpurohit9005@gmail.com" class="channel-item" id="contact-link-email">
+              <div class="channel-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="channel-text">
+                <span class="label">Direct Email</span>
+                <span class="val" id="contact-val-email">vipulrajpurohit9005@gmail.com</span>
+              </div>
+            </a>
+
+            <div class="channel-item">
+              <div class="channel-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="channel-text">
+                <span class="label">Location Base</span>
+                <span class="val" id="contact-val-location">Khergam (near Valsad) / Greater Vadodara, Gujarat</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Social Media Grid (Can add GitHub, X, Instagram, Facebook, etc.) -->
+          <div class="social-links-grid-dynamic" id="contact-socials-container">
+            <!-- Rendered by js/app.js -->
+          </div>
+
+        </div>
+
+        <!-- Right: Functional Sanitized Message Form -->
+        <div class="contact-form-card" data-aos="fade-left">
+          <h3 class="form-title">Send a Direct Message</h3>
+          <p class="form-subtitle">Messages are sanitized client-side &amp; verified before delivery.</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">YOUR FULL NAME *</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Sharma" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">YOUR EMAIL ADDRESS (VERIFIED INBOX) *</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@company.com" required autocomplete="email">
+              <div id="email-verify-hint" class="email-feedback-hint"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">MESSAGE DETAILS *</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Describe your inquiry, project scope, or opportunity..." required></textarea>
+            </div>
+
+            <!-- Sender Authenticity Security Code (Anti-Bot / Identity Verification Challenge) -->
+            <div class="form-group verification-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+                <label for="contact-auth-code" class="form-label" style="margin-bottom: 0;">SENDER AUTHENTICITY CODE *</label>
+                <button type="button" id="btn-refresh-captcha" style="background: transparent; border: none; cursor: pointer; color: var(--blue-primary); font-size: 0.78rem; font-family: var(--font-code); font-weight: 600; display: inline-flex; align-items: center; gap: 0.35rem;">
+                  <i class="fa-solid fa-arrows-rotate"></i> Refresh Code
+                </button>
+              </div>
+              <div class="verification-input-row">
+                <div id="captcha-display" class="captcha-badge" title="Cryptographic Session Passcode">SEC-8492</div>
+                <input type="text" id="contact-auth-code" class="form-input" placeholder="Enter code shown on left" required autocomplete="off" style="font-family: var(--font-code); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">
+              </div>
+              <div id="auth-code-error" style="color: var(--rose-danger); font-size: 0.8rem; font-family: var(--font-code); margin-top: 0.35rem; display: none;"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Verify &amp; Send Direct Message</span>
+            </button>
+
+            <!-- Dual Option: Direct Verified Gmail Send -->
+            <div class="or-divider-row">
+              <span>OR SEND VIA VERIFIED EMAIL CLIENT</span>
+            </div>
+
+            <button type="button" class="btn-gmail-direct" id="btn-direct-gmail" title="Open directly in verified Gmail compose">
+              <i class="fa-brands fa-google"></i>
+              <span>Send via Verified Gmail (1-Click Authenticated)</span>
+            </button>
+
+            <!-- Alert notification -->
+            <div id="form-alert" class="form-alert"></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Vipul Rajpurohit Chensinh</div>
+          <p class="footer-desc">
+            BCA (2024–2027) Cybersecurity Student at GSFC University. Building resilient web architectures and defending critical software infrastructure.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation Links</div>
+          <ul class="footer-nav-list">
+            <li><a href="#about" class="footer-nav-link">About &amp; Background</a></li>
+            <li><a href="#skills" class="footer-nav-link">Skills &amp; Tooling</a></li>
+            <li><a href="#certifications" class="footer-nav-link">Certifications</a></li>
+            <li><a href="#projects" class="footer-nav-link">Projects Showcase</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact Channels</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Direct Reach Out</div>
+          <ul class="footer-nav-list" id="footer-contact-list">
+            <li><a href="tel:+919558648873" class="footer-nav-link" id="footer-link-phone">+91 9558648873</a></li>
+            <li><a href="mailto:vipulrajpurohit9005@gmail.com" class="footer-nav-link" id="footer-link-email">vipulrajpurohit9005@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/vipul-rajpurohit-896824343" target="_blank" rel="noopener noreferrer" class="footer-nav-link" id="footer-link-linkedin">LinkedIn Profile</a></li>
+            <li><a href="https://www.instagram.com/vipul_rajpurohit.5?dlrf=ODB5azM4cnczZG1h" target="_blank" rel="noopener noreferrer" class="footer-nav-link" id="footer-link-instagram">Instagram Profile</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="year-stamp">2026</span> Vipul Rajpurohit Chensinh. All rights reserved.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       10. Hidden Admin Login PIN Modal (DEFAULT KEY TEXT REMOVED)
+       ========================================================================= -->
+  <div class="modal-overlay" id="admin-modal" role="dialog" aria-modal="true" aria-labelledby="admin-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-header-title" id="admin-modal-title">
+          <i class="fa-solid fa-user-lock" style="color: var(--blue-primary);"></i>
+          <span>Administrator Authorization</span>
+        </h3>
+        <button class="modal-close" id="admin-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          Enter your administrator security PIN to unlock full-site inline editing, photo management, skills editor, and project controls.
+        </p>
+
+        <div class="form-group">
+          <label for="admin-pin-input" class="form-label">SECURITY PIN CODE</label>
+          <input 
+            type="password" 
+            id="admin-pin-input" 
+            class="form-input" 
+            placeholder="Enter Security PIN" 
+            autocomplete="off"
+          >
+          <div id="admin-pin-error" style="color: var(--rose-danger); font-size: 0.8rem; font-family: var(--font-code); margin-top: 0.5rem; display: none;"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" id="admin-pin-submit">
+          <span>Authenticate</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       11. Edit About Section & Change Photo Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="about-modal" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-header-title" id="about-modal-title">
+          <i class="fa-solid fa-user-pen" style="color: var(--blue-primary);"></i>
+          <span>Edit About Section &amp; Profile Photo</span>
+        </h3>
+        <button class="modal-close" id="about-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="about-form">
+        <div class="modal-body">
+          
+          <!-- Photo Upload & URL Controls -->
+          <div style="background: var(--bg-core); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-image" style="color: var(--blue-primary);"></i> Profile Photograph Management
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+              <div class="photo-preview-box">
+                <img src="assets/profile.jpg" alt="Preview" id="cms-photo-preview">
+              </div>
+
+              <div style="flex: 1; min-width: 240px;">
+                <label class="form-label">UPLOAD NEW PHOTO FROM DEVICE</label>
+                <input type="file" id="cms-photo-file" accept="image/*" class="form-input" style="padding: 0.5rem;">
+                
+                <div style="margin-top: 0.75rem;">
+                  <label class="form-label">OR PASTE IMAGE URL</label>
+                  <input type="url" id="cms-photo-url" class="form-input" placeholder="https://example.com/photo.jpg">
+                </div>
+
+                <button type="button" class="btn btn-outline btn-sm" id="btn-reset-photo" style="margin-top: 0.65rem;">
+                  <i class="fa-solid fa-rotate-left"></i> Reset to Default Photo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Texts -->
+          <div class="form-group">
+            <label for="cms-about-name" class="form-label">FULL NAME *</label>
+            <input type="text" id="cms-about-name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cms-about-subtag" class="form-label">TAGLINE / BADGE (e.g. BCA 2024–2027) *</label>
+            <input type="text" id="cms-about-subtag" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cms-about-lead" class="form-label">INTRODUCTORY LEAD PARAGRAPH *</label>
+            <textarea id="cms-about-lead" class="form-textarea" rows="3" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="cms-about-body" class="form-label">MAIN ABOUT BODY TEXT *</label>
+            <textarea id="cms-about-body" class="form-textarea" rows="4" required></textarea>
+          </div>
+
+          <!-- Education -->
+          <div class="form-group">
+            <label for="cms-about-edu-title" class="form-label">EDUCATION TITLE *</label>
+            <input type="text" id="cms-about-edu-title" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cms-about-edu-desc" class="form-label">EDUCATION SUMMARY *</label>
+            <textarea id="cms-about-edu-desc" class="form-textarea" rows="2" required></textarea>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-sm" id="about-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm">Save &amp; Update About</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       12. Manage Skills & Tools Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="skills-modal" role="dialog" aria-modal="true" aria-labelledby="skills-modal-title">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-header-title" id="skills-modal-title">
+          <i class="fa-solid fa-sliders" style="color: var(--blue-primary);"></i>
+          <span>Manage Technical Skills &amp; Security Tools</span>
+        </h3>
+        <button class="modal-close" id="skills-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Category Selector -->
+        <div class="form-group">
+          <label for="skills-category-select" class="form-label">SELECT SKILL CATEGORY TO MANAGE</label>
+          <select id="skills-category-select" class="form-input" style="cursor: pointer;">
+            <option value="Programming">Programming Languages</option>
+            <option value="Security & Tools">Security &amp; Tools</option>
+            <option value="Web Stack">Web Stack &amp; Databases</option>
+          </select>
+        </div>
+
+        <!-- Current Category Items List -->
+        <div class="detail-section-title">CURRENT ITEMS IN THIS CATEGORY</div>
+        <div class="editable-items-list" id="skills-items-list">
+          <!-- Rendered by js/app.js with delete buttons -->
+        </div>
+
+        <!-- Form to Add New Skill -->
+        <div style="background: var(--blue-soft); border: 1px solid var(--blue-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-weight: 700; color: var(--blue-primary); margin-bottom: 0.85rem; font-size: 0.95rem;">
+            <i class="fa-solid fa-plus-circle"></i> Add New Skill / Tool to Selected Category
+          </div>
+
+          <form id="add-skill-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+              <div class="form-group" style="margin-bottom: 0.85rem;">
+                <label for="new-skill-name" class="form-label">SKILL / TOOL NAME *</label>
+                <input type="text" id="new-skill-name" class="form-input" placeholder="e.g. Docker / Wireshark" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0.85rem;">
+                <label for="new-skill-tag" class="form-label">LEVEL / SPECIALIZATION TAG *</label>
+                <input type="text" id="new-skill-tag" class="form-input" placeholder="e.g. Container Security" required>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0.85rem;">
+              <label for="new-skill-desc" class="form-label">SHORT DESCRIPTION *</label>
+              <input type="text" id="new-skill-desc" class="form-input" placeholder="e.g. Container isolation, image scanning, and network namespaces." required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-plus"></i> Add Skill to Registry
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-sm" id="skills-modal-done">Done &amp; Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. Edit Contact Info & Manage Social Platforms Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-header-title" id="contact-modal-title">
+          <i class="fa-solid fa-address-book" style="color: var(--blue-primary);"></i>
+          <span>Edit Contact Channels &amp; Social Media Accounts</span>
+        </h3>
+        <button class="modal-close" id="contact-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Direct Contact Form -->
+        <form id="contact-info-form">
+          <div class="detail-section-title">DIRECT CONTACT DETAILS</div>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="cms-phone" class="form-label">PRIMARY PHONE / WHATSAPP *</label>
+              <input type="text" id="cms-phone" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cms-email" class="form-label">DIRECT EMAIL ADDRESS *</label>
+              <input type="email" id="cms-email" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cms-location" class="form-label">BASE LOCATION *</label>
+            <input type="text" id="cms-location" class="form-input" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-sm" style="margin-bottom: 2rem;">
+            <i class="fa-solid fa-check"></i> Save Contact Numbers &amp; Email
+          </button>
+        </form>
+
+        <!-- Social Media Platforms Manager -->
+        <div class="detail-section-title">ACTIVE SOCIAL MEDIA &amp; PROFILES</div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+          Add or remove any social media links (LinkedIn, Instagram, GitHub, X / Twitter, Facebook, YouTube, etc.). All changes reflect immediately across the site!
+        </p>
+
+        <div class="editable-items-list" id="social-accounts-list">
+          <!-- Rendered dynamically by js/app.js with direct links & delete buttons -->
+        </div>
+
+        <!-- Add New Social Link Form -->
+        <div style="background: var(--blue-soft); border: 1px solid var(--blue-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-weight: 700; color: var(--blue-primary); margin-bottom: 0.85rem; font-size: 0.95rem;">
+            <i class="fa-solid fa-share-nodes"></i> Add New Social Media Account
+          </div>
+
+          <form id="add-social-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+              <div class="form-group" style="margin-bottom: 0.85rem;">
+                <label for="new-social-platform" class="form-label">PLATFORM TYPE</label>
+                <select id="new-social-platform" class="form-input" style="cursor: pointer;">
+                  <option value="github">GitHub</option>
+                  <option value="x-twitter">X (Twitter)</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="discord">Discord</option>
+                  <option value="custom">Other / Custom</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0.85rem;">
+                <label for="new-social-label" class="form-label">DISPLAY LABEL *</label>
+                <input type="text" id="new-social-label" class="form-input" placeholder="e.g. GitHub Profile" required>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0.85rem;">
+              <label for="new-social-url" class="form-label">PROFILE LINK URL *</label>
+              <input type="url" id="new-social-url" class="form-input" placeholder="https://github.com/vipulrajpurohit" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-plus"></i> Attach Social Account
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-sm" id="contact-modal-done">Done &amp; Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       14. Add / Edit Project Modal (Admin Only)
+       ========================================================================= -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-header-title" id="project-modal-title">
+          <i class="fa-solid fa-folder-plus" style="color: var(--blue-primary);"></i>
+          <span>Project Management</span>
+        </h3>
+        <button class="modal-close" id="project-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="project-form">
+        <input type="hidden" id="proj-edit-id" value="">
+
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="proj-title" class="form-label">PROJECT TITLE *</label>
+            <input type="text" id="proj-title" class="form-input" placeholder="e.g. ShieldAI Chrome Extension" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="proj-status" class="form-label">PROJECT STATUS</label>
+              <select id="proj-status" class="form-input" style="cursor: pointer;">
+                <option value="completed">Active / Completed</option>
+                <option value="upcoming">Upcoming (In Development)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="proj-category" class="form-label">CATEGORY</label>
+              <select id="proj-category" class="form-input" style="cursor: pointer;">
+                <option value="Cybersecurity">Cybersecurity Tool</option>
+                <option value="Full-Stack">Full-Stack Web App</option>
+                <option value="Web Development">Web Development</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="proj-desc" class="form-label">DESCRIPTION &amp; VALUE *</label>
+            <textarea id="proj-desc" class="form-textarea" placeholder="Detail the system architecture, defensive controls, and features..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="proj-tech" class="form-label">TECH STACK TAGS (Comma separated)</label>
+            <input type="text" id="proj-tech" class="form-input" placeholder="e.g. Python, Burp Suite, Node.js, MongoDB">
+          </div>
+
+          <div class="form-group">
+            <label for="proj-url" class="form-label">PROJECT / REPO URL (Optional - Leave blank if not public)</label>
+            <input type="url" id="proj-url" class="form-input" placeholder="https://github.com/your-username/repo (Optional)">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline btn-sm" id="project-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm">Save &amp; Persist</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       15. Project Specs & Architecture Details Modal (Zero 404s!)
+       ========================================================================= -->
+  <div class="modal-overlay" id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-header-title">
+          <i class="fa-solid fa-layer-group" style="color: var(--blue-primary);"></i>
+          <span id="detail-title">Project Specifications</span>
+        </h3>
+        <button class="modal-close" id="detail-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="detail-meta-row">
+          <span class="project-category-pill" id="detail-category">Cybersecurity</span>
+          <span id="detail-status-badge" class="status-badge-live">Active</span>
+        </div>
+
+        <div class="detail-section-title">SYSTEM ARCHITECTURE &amp; HIGHLIGHTS</div>
+        <div class="detail-desc-box" id="detail-desc">
+          Architecture details will appear here.
+        </div>
+
+        <div class="detail-section-title">VERIFIED TECHNOLOGY STACK</div>
+        <div class="detail-tech-list" id="detail-tech-list">
+          <!-- Badges injected dynamically -->
+        </div>
+
+        <div class="detail-section-title">DEPLOYMENT STATUS &amp; ACCESS</div>
+        <div class="detail-link-box" id="detail-link-action">
+          <!-- Safe dynamic status and action -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('detail-modal').classList.remove('active'); document.body.style.overflow = '';">
+          <span>Close Window</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AOS (Animate On Scroll) JS CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Application JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
